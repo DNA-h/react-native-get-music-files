@@ -16,7 +16,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReadableMap;
@@ -25,12 +25,7 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
 
-import wseemann.media.FFmpegMediaMetadataRetriever;
-
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.cinder92.musicfiles.ReactNativeFileManager;
-
-import org.farng.mp3.MP3File;
 
 
 public class RNReactNativeGetMusicFilesModule extends ReactContextBaseJavaModule {
