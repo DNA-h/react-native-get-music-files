@@ -1,8 +1,8 @@
 # react-native-get-music-files
-React Native package to get music files from local and sd for iOS and Android
+React Native package to get local music files (from phone memory and sd-card for iOS and Android
 # What does this package?
 
-This package get all the sound files in your local and sd card for Androi and iOS, and retrive metadata from each file, also generate an blurred image from cover file.
+This package will get all the local sound files for Android and iOS, and retrieve metadata for each file, also generate a blurred image from cover file.
 
 * SongID
 * Title
@@ -15,9 +15,7 @@ This package get all the sound files in your local and sd card for Androi and iO
 * Genre
 ## Getting started
 
-`$ npm install react-native-get-music-files --save`
-or 
-`$ npm install https://github.com/cinder92/react-native-get-music-files.git --save`
+`$ yarn add https://github.com/DNA-h/react-native-get-music-files.git`
 
 ### Mostly automatic installation
 
@@ -56,11 +54,10 @@ MusicFiles.getAll({
     blured : true, // works only when 'cover' is set to true
     artist : true,
     duration : true, //default : true
-    cover : false, //default : true,
     genre : true,
     title : true,
     cover : true,
-    minimumSongDuration : 10000 // get songs bigger than 10000 miliseconds duration,
+    minimumSongDuration : 10000, // get songs bigger than 10000 miliseconds duration,
     fields : ['title','albumTitle','genre','lyrics','artwork','duration'] // for iOs Version
 }).then(tracks => {
     // do your stuff...
@@ -88,7 +85,6 @@ componentDidMount(){
             blured : false,
             artist : true,
             duration : true, //default : true
-            cover : true, //default : true,
             title : true,
             cover : true,
             batchNumber : 5, //get 5 songs per batch
